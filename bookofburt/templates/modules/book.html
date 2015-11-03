@@ -1,0 +1,7 @@
+<div>
+	<h3>{{book['title']}}</h3>
+	<h4>{{book['author']}}</h4>
+	{% autoescape None %}
+	{{book['description']}}
+	<p><a href="/edit/{{book['isbn']}}">Edit</a></p>
+</div>
