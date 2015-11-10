@@ -4,7 +4,7 @@ import tornado.web
 import tornado.options
 
 from tornado.options import define, options
-define("port", default=8000, help="run on the given port", type=int)
+define("port", default=8800, help="run on the given port", type=int)
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -17,7 +17,7 @@ class MainHandler(tornado.web.RequestHandler):
 
         self.write(
             '<html><head><title>Cookie Counter</title></head>'
-            '<body><h1>You are viewed this page %s times.</h1>' % countString + 
+            '<body><h1>You are viewed this page %s.</h1>' % countString + 
             '</body></html>'
         )
 
