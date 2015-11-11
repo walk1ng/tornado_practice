@@ -1,0 +1,10 @@
+<html>
+	<head><title>please log in</title></head>
+	<body>
+		<form action='/login' method='POST'>
+			{% raw xsrf_form_html() %}
+			Username: <input type='text' name='username' />
+			<input type='submit' value='Log in' />
+		</form>
+	</body>
+</html>
